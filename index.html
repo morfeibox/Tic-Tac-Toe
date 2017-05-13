@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Tic Tac Toe Game</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- facebook like,share secript-->
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+
+    <div class="game-scores text-center"><span class="computer-scores">PC: <span class=" " ></span></span><span class="player-scores"> |You: <span class=" " ></span></span><div class="scores"></div></div>
+         <div class="choose-payer text-center"><img  src="media/62.gif" height="120" width="120">Choose player:<button class="o-player" id="o-player">o</button>|<button class="x-player" id="x-player">x</button></div>
+            <div class="text-center" id="game-condition"><img id="condition-gif" src="" height="256" width="256"><p id="condition"></p><button id="reset">Ok</button></div>
+            <div class="container-fluid">
+        <div class="game-bord ">
+            <div class="box-centered" >
+            <div class="box box-shadow click" id="0"></div>
+            <div class="box box-shadow click" id="1"></div>
+            <div class="box box-shadow click" id="2"></div>
+
+            <div class="box box-shadow click" id="3"></div>
+            <div class="box box-shadow click" id="4"></div>
+            <div class="box box-shadow click" id="5"></div>
+
+            <div class="box box-shadow click" id="6"></div>
+            <div class="box box-shadow click" id="7"></div>
+            <div class="box box-shadow click" id="8"></div>
+            </div>
+            </div>
+
+    </div>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+<footer>
+    <div class="text-center" >coded By Atanas Beychev  <div class="fb-like" data-href="http://www.abeychev.tk/tictactoe/index.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></div>
+
+</footer>
+</html>
